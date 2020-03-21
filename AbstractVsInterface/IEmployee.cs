@@ -11,36 +11,36 @@ namespace AbstractVsInterface
 
 		// just signature of the properties and methods.
 		// setting a rule or contract to be followed by implementations.
-		String ID
+		string ID
 		{
 			get;
 			set;
 		}
 
-		String FirstName
+		string FirstName
 		{
 			get;
 			set;
 		}
-		
-		String LastName
+
+		string LastName
 		{
 			get;
 			set;
 		}
-		
+
 		// cannot have implementation
 		// cannot have modifiers public etc all are assumed public
 		// cannot have virtual
 
-		String Update();
+		string Update();
 
-		String Add();
+		string Add();
 
-		String Delete();
+		string Delete();
 
-		String Search();
+		string Search();
 
-		String CalculateWage();
+		string CalculateWage();
 	}
 }

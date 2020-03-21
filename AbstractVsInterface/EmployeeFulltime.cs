@@ -17,20 +17,20 @@ namespace AbstractVsInterface
 
 		public override string ID
 		{
-			get => id;
-			set => id = value;
+			get => _id;
+			set => _id = value;
 		}
 
 		public override string FirstName
 		{
-			get { return fname; }
-			set { fname = value; }
+			get { return _fname; }
+			set { _fname = value; }
 		}
 
 		public override string LastName
 		{
-			get { return lname; }
-			set { lname = value; }
+			get { return _lname; }
+			set { _lname = value; }
 		}
 
 		// Common methods that are implemented in the abstract class:
@@ -57,9 +57,9 @@ namespace AbstractVsInterface
 		
 		// Abstract method that is different from Fulltime and Contractor,
 		// and therefore is overridden here:
-		public override String CalculateWage()
+		public override string CalculateWage()
 		{
-			return "Full time employee " + base.fname + " is calculated using the Abstract class...";
+			return "Full time employee " + base._fname + " is calculated using the Abstract class...";
 		}
 	}
 }

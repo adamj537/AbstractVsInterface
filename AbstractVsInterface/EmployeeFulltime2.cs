@@ -10,15 +10,15 @@ namespace AbstractVsInterface
 	public class EmployeeFulltime2 : IEmployee
 	{
 		// All the properties and fields are defined here!
-		protected String id;
-		protected String lname;
-		protected String fname;
+		protected string id;
+		protected string lname;
+		protected string fname;
 
 		public EmployeeFulltime2()
 		{
 		}
 
-		public String ID
+		public string ID
 		{
 			get
 			{
@@ -30,7 +30,7 @@ namespace AbstractVsInterface
 			}
 		}
 		
-		public String FirstName
+		public string FirstName
 		{
 			get
 			{
@@ -42,7 +42,7 @@ namespace AbstractVsInterface
 			}
 		}
 
-		public String LastName
+		public string LastName
 		{
 			get
 			{
@@ -56,29 +56,29 @@ namespace AbstractVsInterface
 
 		// All the manipulations including Add,Delete, Search, Update, Calculate are done
 		// within the object as there are not implementation in the Interface entity.
-		public String Add()
+		public string Add()
 		{
 			return "Fulltime Employee " + fname + " added.";
 		}
 
-		public String Delete()
+		public string Delete()
 		{
 			return "Fulltime Employee " + fname + " deleted.";
 		}
 
-		public String Search()
+		public string Search()
 		{
 			return "Fulltime Employee " + fname + " searched.";
 		}
 
-		public String Update()
+		public string Update()
 		{
 			return "Fulltime Employee " + fname + " updated.";
 		}
 		
 		// If you change to Calculatewage(). Just small 'w' it will raise error as in interface
 		// it is CalculateWage() with capital 'W'.
-		public String CalculateWage()
+		public string CalculateWage()
 		{
 			return "Full time employee " + fname + " calculated using Interface.";
 		}

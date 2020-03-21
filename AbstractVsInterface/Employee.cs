@@ -9,31 +9,19 @@ namespace AbstractVsInterface
 	{
 		#region Fields
 
-		protected String id;
-		protected String lname;
-		protected String fname;
+		protected string _id;
+		protected string _lname;
+		protected string _fname;
 
 		#endregion
 
 		#region Properties
 
-		public abstract string ID
-		{
-			get;
-			set;
-		}
+		public abstract string ID { get; set; }
 
-		public abstract string FirstName
-		{
-			get;
-			set;
-		}
+		public abstract string FirstName { get; set; }
 		
-		public abstract string LastName
-		{
-			get;
-			set;
-		}
+		public abstract string LastName { get; set; }
 
 		#endregion
 
@@ -41,22 +29,22 @@ namespace AbstractVsInterface
 
 		public string Update()
 		{
-			return "Employee " + id + " " + lname + " " + fname + " updated";
+			return "Employee " + _id + " " + _lname + " " + _fname + " updated";
 		}
 
 		public string Add()
 		{
-			return "Employee " + id + " " + lname + " " + fname + " added";
+			return "Employee " + _id + " " + _lname + " " + _fname + " added";
 		}
 
 		public string Delete()
 		{
-			return "Employee " + id + " " + lname + " " + fname + " deleted";
+			return "Employee " + _id + " " + _lname + " " + _fname + " deleted";
 		}
 		
 		public string Search()
 		{
-			return "Employee " + id + " " + lname + " " + fname + " found";
+			return "Employee " + _id + " " + _lname + " " + _fname + " found";
 		}
 
 		#endregion
@@ -66,7 +54,7 @@ namespace AbstractVsInterface
 		// This abstract method is different for Fulltime and Contractor.
 		// Therefore it is uncompleted; each implementation 
 		// completes it the way they calculate the wage.
-		public abstract String CalculateWage();
+		public abstract string CalculateWage();
 
 		#endregion
 	}
